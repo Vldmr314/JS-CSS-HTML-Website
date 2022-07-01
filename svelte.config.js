@@ -16,7 +16,7 @@ const config = {
         }),
 
         paths: {
-            base: dev ? '' : 'https://github.com/Vldmr314/PersonalWebsite',
+            base: dev ? '' : '/PersonalWebsite',
         },
         methodOverride: {
             allowed: ['PATCH', 'DELETE']

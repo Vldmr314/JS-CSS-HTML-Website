@@ -1,4 +1,5 @@
 <script lang="ts" context="module">
+    import { base } from '$app/paths';
     export const prerender = false;
 </script>
 
@@ -68,10 +69,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Main Page</a></li>
-                <li><a href="/#about">About Me</a></li>
-                <li><a href="/#portfolio">Portfolio</a></li>
-                <li><a href="/#contact">My Contacts</a></li>
+                <li><a href="{base}/">Main Page</a></li>
+                <li><a href="{base}/#about">About Me</a></li>
+                <li><a href="{base}/#portfolio">Portfolio</a></li>
+                <li><a href="{base}/#contact">My Contacts</a></li>
             </ul>
         </nav>
 
