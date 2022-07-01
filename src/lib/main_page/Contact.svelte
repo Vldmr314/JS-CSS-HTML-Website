@@ -26,7 +26,7 @@
         top: 300vh;
         height: 100vh;
         width: 100vw;
-        background: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/backgrounds/contact_back.jpeg") no-repeat;
+        background: url("/img/backgrounds/contact_back.jpeg") no-repeat;
         background-size: cover;
         color: white;
     }

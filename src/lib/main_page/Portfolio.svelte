@@ -11,7 +11,7 @@
         top: 200vh;
         height: 100vh;
         width: 100vw;
-        background: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/backgrounds/portf_back.gif") no-repeat;
+        background: url("/img/backgrounds/portf_back.gif") no-repeat;
         background-size: cover;
         color: white;
     }

@@ -91,7 +91,7 @@
                 " Stir well. Strain into a cocktail glass."}</p>
             </div>
             <img alt="drink"
-                 src={drinkPhoto || "https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/other/defolt_cocktail.jpg"}
+                 src={drinkPhoto || "/img/other/defolt_cocktail.jpg"}
                  height="400"/>
         </div>
     </div>
@@ -104,8 +104,8 @@
 <style>
     @font-face {
         font-family: "Xirod";
-        src: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/fonts/xirod.woff2") format("woff2"),
-        url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/fonts/xirod.woff") format("woff");
+        src: url("/fonts/xirod.woff2") format("woff2"),
+        url("/fonts/xirod.woff") format("woff");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -125,7 +125,7 @@
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/other/recipe.jpg") no-repeat;
+        background: url("/img/other/recipe.jpg") no-repeat;
         background-size: cover;
         color: white;
     }

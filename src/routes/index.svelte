@@ -25,8 +25,8 @@
 <style>
     @font-face {
         font-family: "Xirod";
-        src: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/fonts/xirod.woff2") format("woff2"),
-        url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/fonts/xirod.woff") format("woff");
+        src: url("/fonts/xirod.woff2") format("woff2"),
+        url("/fonts/xirod.woff") format("woff");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
