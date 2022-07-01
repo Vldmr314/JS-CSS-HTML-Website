@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
-    import { base } from '$app/paths';
+    import {base} from '$app/paths';
+
     export const prerender = false;
 </script>
 
@@ -89,7 +90,9 @@
                 <p>{instructions || "In a mixing glass half-filled with ice cubes, combine all of the ingredients." +
                 " Stir well. Strain into a cocktail glass."}</p>
             </div>
-            <img alt="drink" src={drinkPhoto || base+"/img/other/defolt_cocktail.jpg"} height="400"/>
+            <img alt="drink"
+                 src={drinkPhoto || "https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/other/defolt_cocktail.jpg"}
+                 height="400"/>
         </div>
     </div>
 
@@ -101,8 +104,8 @@
 <style>
     @font-face {
         font-family: "Xirod";
-        src: url("PersonalWebsite/fonts/xirod.woff2") format("woff2"),
-        url("PersonalWebsite/fonts/xirod.woff") format("woff");
+        src: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/fonts/xirod.woff2") format("woff2"),
+        url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/fonts/xirod.woff") format("woff");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -122,7 +125,7 @@
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background: url("PersonalWebsite/img/other/recipe.jpg") no-repeat;
+        background: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/other/recipe.jpg") no-repeat;
         background-size: cover;
         color: white;
     }

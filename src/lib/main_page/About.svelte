@@ -22,7 +22,7 @@
         top: 100vh;
         height: 100vh;
         width: 100vw;
-        background: url("PersonalWebsite/img/backgrounds/about_back.jpg") fixed;
+        background: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/backgrounds/about_back.jpg") fixed;
         background-size: cover;
         color: white;
     }

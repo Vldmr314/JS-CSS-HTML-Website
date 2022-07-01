@@ -25,7 +25,7 @@
         width: 100vw;
         position: fixed;
         color: white;
-        background: url("PersonalWebsite/img/backgrounds/intro_back.jpg") fixed;
+        background: url("https://github.com/Vldmr314/PersonalWebsite/tree/master/static/img/backgrounds/intro_back.jpg") fixed;
         background-size: cover;
     }
 
