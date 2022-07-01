@@ -1,3 +1,7 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <div class="about" id="about">
     <h1>About me</h1>
 
@@ -6,7 +10,7 @@
             <p>Hi! My name is Vladimir Ryabenko and you are currently on my personal website:) This is only the
                 first version, so please don't judge strictly. I am a first year student at Innopolis University
                 and a beginner developer!</p>
-            <img src="./img/other/my_photo.jpg" alt="Vladimir Ryabenko" height="450"/>
+            <img src="{base}/img/other/my_photo.jpg" alt="Vladimir Ryabenko" height="450"/>
         </div>
     </div>
 </div>

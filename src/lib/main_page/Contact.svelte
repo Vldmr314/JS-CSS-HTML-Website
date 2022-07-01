@@ -1,13 +1,17 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <div class="contact" id="contact">
     <h1>Contact Me</h1>
 
     <div class="contact-links">
-        <a href="https://github.com/Vldmr314" target="_blank"><img src="./img/socials/git_icon.png"
+        <a href="https://github.com/Vldmr314" target="_blank"><img src="{base}/img/socials/git_icon.png"
                                                                    alt="github"/></a>
-        <a href="https://vk.com/vladimir31415" target="_blank"><img src="./img/socials/vk_icon.png" alt="vk"/></a>
-        <a href="https://www.instagram.com/_.mr_volodya._" target="_blank"><img src="./img/socials/inst_icon.png"
+        <a href="https://vk.com/vladimir31415" target="_blank"><img src="{base}/img/socials/vk_icon.png" alt="vk"/></a>
+        <a href="https://www.instagram.com/_.mr_volodya._" target="_blank"><img src="{base}/img/socials/inst_icon.png"
                                                                                 alt="instagram"/></a>
-        <a href="https://t.me/Vldmr11" target="_blank"><img src="./img/socials/tg_icon.png" alt="telegram"/></a>
+        <a href="https://t.me/Vldmr11" target="_blank"><img src="{base}/img/socials/tg_icon.png" alt="telegram"/></a>
     </div>
 
     <footer>
