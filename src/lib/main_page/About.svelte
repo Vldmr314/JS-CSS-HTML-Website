@@ -6,7 +6,7 @@
             <p>Hi! My name is Vladimir Ryabenko and you are currently on my personal website:) This is only the
                 first version, so please don't judge strictly. I am a first year student at Innopolis University
                 and a beginner developer!</p>
-            <img src="./img/other/my_photo.jpg" alt="My Photo" height="450"/>
+            <img src="./img/other/my_photo.jpg" alt="Vladimir Ryabenko" height="450"/>
         </div>
     </div>
 </div>

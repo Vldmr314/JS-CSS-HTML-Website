@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+    export const prerender = false;
+</script>
+
 <script lang="ts">
     let drinkName: string;
     let instructions: string;
@@ -16,7 +20,7 @@
     }
 
     async function fetchSomeRecipe(): Promise<RecipeJson> {
-        return {elements: await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php').then(r => r.json())};
+        return {elements: await fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php").then(r => r.json())};
     }
 
     function parseRecipe(recipeJson: RecipeJson): Recipe {
@@ -52,7 +56,7 @@
     }
 
     async function handleClick() {
-        drinkName = instructions = 'Loading...';
+        drinkName = instructions = "Loading...";
         const recipeJson: RecipeJson = await fetchSomeRecipe();
         const recipe: Recipe = parseRecipe(recipeJson);
         setParams(recipe);
@@ -73,18 +77,18 @@
 
         <h1>Random Cocktail Recipe</h1>
     </header>
-    <h2>{drinkName || 'Balmoral'}</h2>
+    <h2>{drinkName || "Balmoral"}</h2>
 
     <div class="recipe-wrapper">
         <div class="recipe-info">
             <div class="recipe-text">
                 <p>Ingredients: </p>
-                <p>{ingredients || 'Scotch, Sweet Vermouth, Dry Vermouth, Bitters'}</p>
+                <p>{ingredients || "Scotch, Sweet Vermouth, Dry Vermouth, Bitters"}</p>
                 <p>Instruction: </p>
-                <p>{instructions || 'In a mixing glass half-filled with ice cubes, combine all of the ingredients.' +
-                ' Stir well. Strain into a cocktail glass.'}</p>
+                <p>{instructions || "In a mixing glass half-filled with ice cubes, combine all of the ingredients." +
+                " Stir well. Strain into a cocktail glass."}</p>
             </div>
-            <img alt="drink image" src={drinkPhoto || './img/other/defolt_cocktail.jpg'} height="400"/>
+            <img alt="drink" src={drinkPhoto || "./img/other/defolt_cocktail.jpg"} height="400"/>
         </div>
     </div>
 
