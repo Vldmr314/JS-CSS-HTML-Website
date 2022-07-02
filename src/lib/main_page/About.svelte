@@ -1,8 +1,9 @@
 <script>
     import { base } from '$app/paths';
+    let path: String = base + "/img/backgrounds/about_back.jpg"
 </script>
 
-<div class="about" id="about">
+<div class="about" id="about" style="--image: url({path});">
     <h1>About me</h1>
 
     <div class="about-wrapper">
@@ -22,7 +23,7 @@
         top: 100vh;
         height: 100vh;
         width: 100vw;
-        background: url("%sveltekit.assets%/img/backgrounds/about_back.jpg") fixed;
+        background-image: var(--image);
         background-size: cover;
         color: white;
     }
