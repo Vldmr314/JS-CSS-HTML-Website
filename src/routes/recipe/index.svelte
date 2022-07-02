@@ -97,24 +97,6 @@
 </div>
 
 <style>
-    @font-face {
-        font-family: "Xirod";
-        src: url("/PersonalWebsite/fonts/xirod.woff2") format("woff2"),
-        url("/PersonalWebsite/fonts/xirod.woff") format("woff");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-
-    :global(body) {
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-        text-shadow: 0 0 7px white,
-        0 0 42px aqua,
-        0 0 82px aqua;
-    }
-
     .recipe {
         margin: 0;
         position: absolute;
