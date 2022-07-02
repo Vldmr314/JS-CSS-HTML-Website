@@ -25,7 +25,7 @@
         width: 100vw;
         position: fixed;
         color: white;
-        background: url("/img/backgrounds/intro_back.jpg") fixed;
+        background: url("%sveltekit.assets%/img/backgrounds/intro_back.jpg") fixed;
         background-size: cover;
     }
 

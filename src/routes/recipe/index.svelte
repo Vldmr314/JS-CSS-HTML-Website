@@ -125,7 +125,7 @@
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background: url("/img/other/recipe.jpg") no-repeat;
+        background: url("%sveltekit.assets%/img/other/recipe.jpg") no-repeat;
         background-size: cover;
         color: white;
     }

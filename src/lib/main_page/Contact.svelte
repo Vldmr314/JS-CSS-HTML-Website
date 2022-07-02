@@ -26,7 +26,7 @@
         top: 300vh;
         height: 100vh;
         width: 100vw;
-        background: url("/img/backgrounds/contact_back.jpeg") no-repeat;
+        background: url("%sveltekit.assets%/img/backgrounds/contact_back.jpeg") no-repeat;
         background-size: cover;
         color: white;
     }
