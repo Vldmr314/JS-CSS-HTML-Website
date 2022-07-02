@@ -1,8 +1,10 @@
 <script lang="ts">
-    import { base } from '$app/paths';
+    import {base} from '$app/paths';
+
+    let path = base + "/img/backgrounds/intro_back.jpg"
 </script>
 
-<div class="intro" id="intro">
+<div class="intro" id="intro" style="--image: url({path});">
     <header>
         <nav>
             <ul>
@@ -25,7 +27,7 @@
         width: 100vw;
         position: fixed;
         color: white;
-        background: url("%sveltekit.assets%/img/backgrounds/intro_back.jpg") fixed;
+        background-image: var(--image);
         background-size: cover;
     }
 

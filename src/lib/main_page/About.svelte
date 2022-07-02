@@ -1,6 +1,7 @@
 <script lang="ts">
-    import { base } from '$app/paths';
-    let path: String = base + "/img/backgrounds/about_back.jpg"
+    import {base} from '$app/paths';
+
+    let path = base + "/img/backgrounds/about_back.jpg"
 </script>
 
 <div class="about" id="about" style="--image: url({path});">

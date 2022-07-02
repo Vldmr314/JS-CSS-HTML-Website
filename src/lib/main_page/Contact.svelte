@@ -1,8 +1,10 @@
-<script>
-    import { base } from '$app/paths';
+<script lang="ts">
+    import {base} from '$app/paths';
+
+    let path = base + "/img/backgrounds/contact_back.jpeg";
 </script>
 
-<div class="contact" id="contact">
+<div class="contact" id="contact" style="--image: url({path});">
     <h1>Contact Me</h1>
 
     <div class="contact-links">
@@ -26,7 +28,7 @@
         top: 300vh;
         height: 100vh;
         width: 100vw;
-        background: url("%sveltekit.assets%/img/backgrounds/contact_back.jpeg") no-repeat;
+        background-image: var(--image);
         background-size: cover;
         color: white;
     }

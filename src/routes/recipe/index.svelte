@@ -1,6 +1,8 @@
 <script lang="ts" context="module">
     import {base} from '$app/paths';
 
+    let path = base + "/img/other/recipe.jpg";
+
     export const prerender = false;
 </script>
 
@@ -66,7 +68,7 @@
 
 </script>
 
-<div class="recipe" id="recipe">
+<div class="recipe" id="recipe" style="--image: url({path});">
     <header>
         <nav>
             <ul>
@@ -104,8 +106,8 @@
 <style>
     @font-face {
         font-family: "Xirod";
-        src: url("/fonts/xirod.woff2") format("woff2"),
-        url("/fonts/xirod.woff") format("woff");
+        src: url("/PersonalWebsite/fonts/xirod.woff2") format("woff2"),
+        url("/PersonalWebsite/fonts/xirod.woff") format("woff");
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -125,7 +127,7 @@
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background: url("%sveltekit.assets%/img/other/recipe.jpg") no-repeat;
+        background-image: var(--image);
         background-size: cover;
         color: white;
     }
