@@ -2,11 +2,14 @@
     import {base} from '$app/paths';
 
     let path = base + "/img/other/recipe.jpg";
+    let drink_path = base + "/img/other/defolt_cocktail.jpg"
 
     export const prerender = false;
 </script>
 
 <script lang="ts">
+    import Navbar from "../../lib/recipe_page/Navbar.svelte";
+
     let drinkName: string;
     let instructions: string;
     let ingredients: string;
@@ -69,18 +72,8 @@
 </script>
 
 <div class="recipe" id="recipe" style="--image: url({path});">
-    <header>
-        <nav>
-            <ul>
-                <li><a href="{base}/">Main Page</a></li>
-                <li><a href="{base}/#about">About Me</a></li>
-                <li><a href="{base}/#portfolio">Portfolio</a></li>
-                <li><a href="{base}/#contact">My Contacts</a></li>
-            </ul>
-        </nav>
+    <Navbar />
 
-        <h1>Random Cocktail Recipe</h1>
-    </header>
     <h2>{drinkName || "Balmoral"}</h2>
 
     <div class="recipe-wrapper">
@@ -93,7 +86,7 @@
                 " Stir well. Strain into a cocktail glass."}</p>
             </div>
             <img alt="drink"
-                 src={drinkPhoto || "/img/other/defolt_cocktail.jpg"}
+                 src={drinkPhoto || drink_path}
                  height="400"/>
         </div>
     </div>
@@ -130,15 +123,6 @@
         background-image: var(--image);
         background-size: cover;
         color: white;
-    }
-
-    h1 {
-        font-family: "Xirod", sans-serif;
-        letter-spacing: 3px;
-        font-size: 36px;
-        display: flex;
-        justify-content: center;
-        margin-top: 5vh;
     }
 
     h2 {
@@ -216,74 +200,5 @@
 
     button:hover span {
         background: transparent;
-    }
-
-    ul {
-        margin: 0;
-        list-style: none;
-        padding: 25px 0 5px;
-        text-align: center;
-        text-shadow: 0 0 7px white,
-        0 0 42px aqua,
-        0 0 82px aqua,
-        0 0 92px aqua;
-    }
-
-    li {
-        display: inline-block;
-    }
-
-    li:after {
-        content: "|";
-        color: aqua;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    li:last-child:after {
-        content: none;
-    }
-
-    a {
-        text-decoration: none;
-        font-family: "Xirod", sans-serif;
-        color: white;
-        letter-spacing: 2px;
-        position: relative;
-        padding-bottom: 5px;
-        margin: 0 34px 0 30px;
-        font-size: 17px;
-        text-transform: uppercase;
-        display: inline-block;
-        transition: color .2s;
-    }
-
-    a, a:visited {
-        color: white;
-    }
-
-    a:hover {
-        color: aqua;
-    }
-
-    a:before,
-    a:after {
-        content: "";
-        position: absolute;
-        height: 2px;
-        top: auto;
-        right: 50%;
-        bottom: -5px;
-        left: 50%;
-        background: aqua;
-        transition: .8s;
-    }
-
-    a:hover:before {
-        left: 0;
-    }
-
-    a:hover:after {
-        right: 0;
     }
 </style>
