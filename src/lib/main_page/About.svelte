@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { base } from '$app/paths';
     let path: String = base + "/img/backgrounds/about_back.jpg"
 </script>
