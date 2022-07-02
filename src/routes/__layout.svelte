@@ -12,7 +12,7 @@
         font-display: swap;
     }
 
-    body {
+    :global(body) {
         padding: 0;
         margin: 0;
         overflow-x: hidden;
