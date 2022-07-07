@@ -5,26 +5,26 @@ const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    // Consult https://github.com/sveltejs/svelte-preprocess
-    // for more information about preprocessors
-    preprocess: preprocess(),
+	// Consult https://github.com/sveltejs/svelte-preprocess
+	// for more information about preprocessors
+	preprocess: preprocess(),
 
-    kit: {
-        adapter: adapter({
-            pages: "build",
-            assets: "build"
-        }),
+	kit: {
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build'
+		}),
 
-        paths: {
-            base: dev ? '' : '/PersonalWebsite',
-        },
-        methodOverride: {
-            allowed: ['PATCH', 'DELETE']
-        },
-        prerender: {
-            default: true,
-        }
-    }
+		paths: {
+			base: dev ? '' : '/PersonalWebsite'
+		},
+		methodOverride: {
+			allowed: ['PATCH', 'DELETE']
+		},
+		prerender: {
+			default: true
+		}
+	}
 };
 
 export default config;
